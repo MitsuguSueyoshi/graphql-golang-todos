@@ -1,0 +1,15 @@
+# Userデータの定義
+type User {
+  id: ID!
+  name: String!
+}
+# Dogデータの定義
+type Dog {
+  id: ID!
+  name: String!
+}
+# データ取得API(userのIDを指定すると、Userデータが返ってくるイメージ)
+type Query {
+  user(id: ID): User!
+  dog(id: ID): Dog!
+}
